@@ -40,5 +40,4 @@ function MeetupItem (props) {
     </Card>
     );
 }
-
 export default MeetupItem;
