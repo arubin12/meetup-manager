@@ -1,5 +1,8 @@
 import NewMeetupForm from "../components/meetups/NewMeetupForm";
 import {useHistory} from  'react-router-dom';
+import classes from './NewMeetup.module.css';
+
+
 function NewMeetupsPage (){
     const history = useHistory(); 
     function addMeetupHandler(meetupData){
@@ -16,7 +19,7 @@ function NewMeetupsPage (){
     }
 
     return <section>
-        <h1>Add New Meetup</h1>
+        <h1 className={classes.head}>Add New Meetup</h1>
         <NewMeetupForm onAddMeetup={addMeetupHandler}/>
     </section>
 
